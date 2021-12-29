@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Investor"
+    android:fontFamily="@font/poppins_semibold">
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_semibold">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="104dp"
+            android:layout_marginTop="0dp"
+            android:text="Investors Form"
+            android:textColor="@color/teal_700"
+            android:textSize="25dp"
+            android:fontFamily="@font/poppins_semibold"/>
+
+        <EditText
+            android:id="@+id/Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:fontFamily="@font/poppins_semibold"/>
+
+        <EditText
+            android:id="@+id/City"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:hint="City,State"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:fontFamily="@font/poppins_semibold"/>
+
+        <EditText
+            android:id="@+id/Scale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:hint="Scale of industry"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:fontFamily="@font/poppins_semibold"/>
+
+        <EditText
+            android:id="@+id/Type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:hint="Type of industry"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:fontFamily="@font/poppins_semibold"/>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:hint="Contact(Email)"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:fontFamily="@font/poppins_semibold"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="125dp"
+        android:textColor="@android:color/white"
+        android:text="SUBMIT" android:layout_marginTop="30dp"
+        android:id="@+id/btnlogin"
+        android:fontFamily="@font/poppins_semibold"
+        android:backgroundTint="#1EB79B"
+        android:textAllCaps="false"
+        />
+
+</LinearLayout>
+
+</FrameLayout>

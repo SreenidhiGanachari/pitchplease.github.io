@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+    <EditText
+        android:id="@+id/edtUsername"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_semibold"
+        android:hint="New Username"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:textColorHint="#D6D4D6"
+        app:layout_constraintBottom_toTopOf="@+id/edtPass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtfirstname" />
+
+    <EditText
+        android:id="@+id/edtfirstname"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="166dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="396dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_semibold"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:textColor="#070707"
+        android:textColorHint="#D6D4D6"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtPass"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/edtUsername"
+        android:layout_alignLeft="@+id/edtUsername"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_semibold"
+        android:hint="New Password"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textColorHint="#D6D4D6"
+        app:layout_constraintBottom_toTopOf="@+id/edtConfirmPass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtUsername">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edtConfirmPass"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/edtPass"
+        android:layout_alignLeft="@+id/edtPass"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_semibold"
+        android:hint="Re-enter Password"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textColorHint="#D6D4D6"
+        app:layout_constraintBottom_toTopOf="@+id/edtEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPass" />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/edtConfirmPass"
+        android:layout_alignLeft="@+id/edtConfirmPass"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_semibold"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        android:textColorHint="#D6D4D6"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtConfirmPass" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/edtEmail"
+        android:layout_alignLeft="@+id/edtEmail"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="47dp"
+        android:backgroundTint="#1EB79B"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="SIGN UP "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="80dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="PITCH PLEASE !"
+        android:textColor="#FF018786"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/edtfirstname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="47dp"
+        android:backgroundTint="#1EB79B"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="LOGIN"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button1"
+        app:layout_constraintTop_toBottomOf="@+id/edtfirstname" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginBottom="47dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Sign up now for great startup ideas ! "
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/button1"
+        app:layout_constraintStart_toStartOf="@+id/edtEmail"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
+</androidx.constraintlayout.widget.ConstraintLayout>
