@@ -1,0 +1,1 @@
+The app's basic idea is to bring together entrepreneurs with innovative start-up ideas to venture capitalists and angel investors willing to fund new start-ups. Anyone and everyone irrespective of their age can pitch their ideas and gather funding. Apart from this, the app will help entrepreneurs gather immense information related to their businesses .
